@@ -137,7 +137,7 @@ async function run(): Promise<void> {
 
     // use the last match (end of the branch name)
     const issueKey = issueKeys[issueKeys.length - 1];
-    console.log(`JIRA key ==> ${issueKey}`);
+    console.log(`JIRA key >>==> ${issueKey}`);
 
     const details: JIRADetails = await jira.getTicketDetails(issueKey);
     if (details.key) {
